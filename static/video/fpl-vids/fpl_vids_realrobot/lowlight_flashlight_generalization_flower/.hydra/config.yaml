@@ -1,0 +1,45 @@
+_target_: kitchen_eval.EvaluationApp
+agent:
+  _target_: src.clients.agents.flowervla_client.FlowerVLAClient
+  ensemble: null
+env:
+  _target_: src.clients.envs.rr_client.RREnvClient
+  host: 127.0.0.1
+  port: 6060
+task_map:
+  _target_: src.kitchen.map_task
+  _partial_: true
+tasks:
+- banana_from_right_stove_to_sink
+- banana_from_right_stove_to_sink
+- banana_from_right_stove_to_sink
+- open_microwave
+- open_microwave
+- open_microwave
+- close_microwave
+- close_microwave
+- close_microwave
+- open_oven
+- open_oven
+- open_oven
+- close_oven
+- close_oven
+- close_oven
+- open_ice
+- open_ice
+- open_ice
+- close_ice
+- close_ice
+- close_ice
+- pot_from_right_stove_to_sink
+- pot_from_right_stove_to_sink
+- pot_from_right_stove_to_sink
+- pot_from_left_stove_to_sink
+- pot_from_left_stove_to_sink
+- pot_from_left_stove_to_sink
+- push_toaster_lever
+- push_toaster_lever
+- push_toaster_lever
+- pull_oven_tray
+- pull_oven_tray
+- pull_oven_tray

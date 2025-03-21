@@ -1,0 +1,33 @@
+_target_: kitchen_eval.EvaluationApp
+agent:
+  _target_: src.clients.agents.flowervla_client.FlowerVLAClient
+  ensemble: null
+env:
+  _target_: src.clients.envs.rr_client.RREnvClient
+  host: 127.0.0.1
+  port: 6060
+task_map:
+  _target_: src.kitchen.map_task
+  _partial_: true
+tasks:
+- name: sequence_oven
+  subtasks:
+  - open_oven
+  - pull_oven_tray
+  - banana_from_right_stove_to_oven_tray
+  - push_oven_tray
+  - close_oven
+- name: sequence_oven
+  subtasks:
+  - open_oven
+  - pull_oven_tray
+  - banana_from_right_stove_to_oven_tray
+  - push_oven_tray
+  - close_oven
+- name: sequence_oven
+  subtasks:
+  - open_oven
+  - pull_oven_tray
+  - banana_from_right_stove_to_oven_tray
+  - push_oven_tray
+  - close_oven

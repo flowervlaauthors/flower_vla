@@ -1,0 +1,22 @@
+_target_: kitchen_eval.EvaluationApp
+agent:
+  _target_: src.clients.agents.flowervla_client.FlowerVLAClient
+  ensemble: null
+env:
+  _target_: src.clients.envs.rr_client.RREnvClient
+  host: 127.0.0.1
+  port: 6060
+task_map:
+  _target_: src.kitchen.map_task
+  _partial_: true
+tasks:
+- banana_from_right_stove_to_oven_tray
+- banana_from_right_stove_to_oven_tray
+- banana_from_right_stove_to_oven_tray
+- banana_from_right_stove_to_oven_tray
+- banana_from_right_stove_to_oven_tray
+- banana_from_tray_to_right_stove
+- banana_from_tray_to_right_stove
+- banana_from_tray_to_right_stove
+- banana_from_tray_to_right_stove
+- banana_from_tray_to_right_stove

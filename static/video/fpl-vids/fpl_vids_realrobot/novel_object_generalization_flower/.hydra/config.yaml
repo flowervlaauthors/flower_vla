@@ -1,0 +1,42 @@
+_target_: kitchen_eval.EvaluationApp
+agent:
+  _target_: src.clients.agents.flowervla_client.FlowerVLAClient
+  ensemble: null
+env:
+  _target_: src.clients.envs.rr_client.RREnvClient
+  host: 127.0.0.1
+  port: 6060
+task_map:
+  _target_: src.kitchen.map_task
+  _partial_: true
+tasks:
+- Move the glove from right stove to sink
+- Move the glove from right stove to sink
+- Move the glove from right stove to sink
+- Move the glove from sink to right stove
+- Move the glove from sink to right stove
+- Move the glove from sink to right stove
+- Move the tennis ball from right stove to sink
+- Move the tennis ball from right stove to sink
+- Move the tennis ball from right stove to sink
+- Move the tennis ball from sink to right stove
+- Move the tennis ball from sink to right stove
+- Move the tennis ball from sink to right stove
+- Move the black donut from right stove to sink
+- Move the black donut from right stove to sink
+- Move the black donut from right stove to sink
+- Move the black donut from sink to right stove
+- Move the black donut from sink to right stove
+- Move the black donut from sink to right stove
+- Move the carrot from right stove to sink
+- Move the carrot from right stove to sink
+- Move the carrot from right stove to sink
+- Move the carrot from sink to right stove
+- Move the carrot from sink to right stove
+- Move the carrot from sink to right stove
+- Move the red cup from right stove to sink
+- Move the red cup from right stove to sink
+- Move the red cup from right stove to sink
+- Move the red cup from sink to right stove
+- Move the red cup from sink to right stove
+- Move the red cup from sink to right stove
