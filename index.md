@@ -10,7 +10,7 @@ affiliations:
 # video:
 # code: https://github.com/intuitive-robots/beso
 # data:
-title-bg-landing-include: fpl-video.html
+# title-bg-landing-include: fpl-video.html
 ---
 
 ## Experiment Videos
@@ -66,7 +66,7 @@ title-bg-landing-include: fpl-video.html
     </div>
 </div>
 
-| Train→Test          | Method          | 1     | 2     | 3     | 4     | 5     | Avg. Len.       |
+<!-- | Train→Test          | Method          | 1     | 2     | 3     | 4     | 5     | Avg. Len.       |
 |---------------------|-----------------|-------|-------|-------|-------|-------|----------------|
 | **ABC→D**           | Diff-P-CNN      | 63.5% | 35.3% | 19.4% | 10.7% | 6.4%  | 1.35±0.05      |
 |                     | MDT             | 63.1% | 42.9% | 24.7% | 15.1% | 9.1%  | 1.55           |
@@ -82,7 +82,7 @@ title-bg-landing-include: fpl-video.html
 |                     | MDT             | 98.6% | 95.8% | 91.6% | 86.2% | 80.1% | 4.52±0.02      |
 |                     | **FLOWER (ours)** | **98.9%** | **96.7%** | **93.9%** | **90.2%** | **85.5%** | **4.62±0.03** |
 
-**Table:** *Experimental Results for the CALVIN ABCD and ABC settings.* 
+**Table:** *Experimental Results for the CALVIN ABCD and ABC settings.*  -->
 
 ### SIMPLER Benchmark
 
@@ -136,7 +136,7 @@ title-bg-landing-include: fpl-video.html
 </div>
 
 
-| Method                       | Open/Close Drawer | Move Near        | Open Top Drawer and Place Apple | Pick Coke Can    | Average          |
+<!-- | Method                       | Open/Close Drawer | Move Near        | Open Top Drawer and Place Apple | Pick Coke Can    | Average          |
 |------------------------------|-------------------|------------------|---------------------------------|------------------|------------------|
 | RT-1-X                       | **59.7**          | 31.7             | **21.3**                        | **56.7**         | **42.4**         |
 | Octo                         | 22.7              | 4.2              | 0.0                             | 17.0             | 11.0             |
@@ -156,7 +156,7 @@ title-bg-landing-include: fpl-video.html
 | **FLOWER Cross-X Pret**     | 13                  | **71**         | **8**            | 88                        | **45**  |
 | **FLOWER Delta EEF Pret**   | **25**              | 33             | 0                | **100**                   | **40**  |
 
-**Table:** *Experimental Results for the SIMPLER Bridge Benchmark.*
+**Table:** *Experimental Results for the SIMPLER Bridge Benchmark.* -->
 
 
 ### LIBERO
@@ -210,7 +210,7 @@ title-bg-landing-include: fpl-video.html
     </div>
 </div>
 
-| Method        | Spatial      | Object       | Goal         | Long         | 90           | Avg          |
+<!-- | Method        | Spatial      | Object       | Goal         | Long         | 90           | Avg          |
 |---------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
 | Diff-P-CNN    | 78.3 ± 1.1%         | 92.5 ± 0.7%         | 68.3 ± 1.2%         | 50.5 ± 1.3%         | -                   | 72.4 ± 0.7%         |
 | Octo          | 78.9 ± 1.0%         | 85.7 ± 0.9%         | 84.6 ± 0.9%         | 51.1 ± 1.3%         | -                   | 75.1 ± 0.6%         |
@@ -218,79 +218,36 @@ title-bg-landing-include: fpl-video.html
 | Baku          | -                   | -                   | -                   | 86.0                | 90.0                | -                   |
 | **FLOWER**    | **97.1 ± 2.1%**     | **96.7 ± 0.4%**     | **95.6 ± 0.6%**     | **93.5 ± 2.0%**     | **93.2 ± 1.2%**     | **95.7 ± 0.7%**     |
 
-**Table:** *Experimental Results for the LIBERO benchmark. Average without LIBERO-90.*
+**Table:** *Experimental Results for the LIBERO benchmark. Average without LIBERO-90.* -->
 
 
 
 ### Bi-Manual Aloha
 
-<div class="columns is-centered">
-    <img src="./static/image/bimanual_aloha.png" alt="ALOHA results" class="column is-two-thirds">
-</div>
-
-**Figure:** *Experimental Results for the Aloha Simulation Tasks.*
-
-
-<!-- <div class="columns is-full is-centered has-text-centered">
+<div class="columns is-full is-centered has-text-centered">
     <div class="column is-four-fifths">
         <div class="column is-full columns is-centered">
             <div class="column is-half">
                 <video width="100%" autoplay muted loop playsinline>
-                    <source src="./static/video/kitchen_rollout.webm">
+                    <source src="./static/video/aloha-sim/transfer_5.mp4">
                 </video>
-                <p>GC-Kitchen</p>
+                <p>Transfer</p>
             </div>
             <div class="column is-half">
                 <video width="100%" autoplay muted loop playsinline>
-                    <source src="./static/video/block_rollout.webm">
+                    <source src="./static/video/aloha-sim/insertion_5.mp4">
                 </video>
-                <p>GC-Block Push</p>
-            </div>
-        </div>
-        <div class="column is-full columns is-centered">
-            <div class="column is-half">
-                <video width="100%" autoplay muted loop playsinline>
-                    <source src="./static/video/beso_lh_seq.webm">
-                </video>
-                <p>CALVIN 2 Tasks</p>
-            </div>
-            <div class="column is-half">
-                <video width="100%" autoplay muted loop playsinline>
-                    <source src="./static/video/beso_single.webm">
-                </video>
-                <p>CALVIN Hard Tasks</p>
-            </div>
-        </div>
-        <div class="column is-full columns is-centered">
-            <div class="column is-half">
-                <video width="100%" autoplay muted loop playsinline>
-                    <source src="./static/video/rp_inside.mkv">
-                </video>
-                <p>D3IL Align (inside)</p>
-            </div>
-            <div class="column is-half">
-                <video width="100%" autoplay muted loop playsinline>
-                    <source src="./static/video/rp_outside.mkv">
-                </video>
-                <p>D3IL Align (outside)</p>
-            </div>
-        </div>
-        <div class="column is-full columns is-centered">
-            <div class="column is-half">
-                <video width="100%" autoplay muted loop playsinline>
-                    <source src="./static/video/long_horizon_sequence_1_f.mp4">
-                </video>
-                <p>CALVIN 5 Task Sequences</p>
-            </div>
-            <div class="column is-half">
-                <video width="100%" autoplay muted loop playsinline>
-                    <source src="./static/video/long_horizon_sequence_2_f.mp4">
-                </video>
-                <p>CALVIN 5 Task Sequences</p>
+                <p>Insertion</p>
             </div>
         </div>
     </div>
-</div> -->
+</div>
+
+<!-- <div class="columns is-centered">
+    <img src="./static/image/bimanual_aloha.png" alt="ALOHA results" class="column is-two-thirds">
+</div>
+
+**Figure:** *Experimental Results for the Aloha Simulation Tasks.* -->
 
 ### Real-World Generalization
 
