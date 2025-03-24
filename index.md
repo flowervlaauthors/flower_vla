@@ -305,6 +305,32 @@ affiliations:
                 <p>Move the pot from the right stove to sink. (OpenVLA w/ flashlight)</p>
             </div>
         </div>
+        <div class="column is-full columns is-centered">
+            <div class="column is-one-quarter">
+                <video width="100%" autoplay muted loop playsinline>
+                    <source src="./static/video/real_novel/novel_flower/Move the glove from right stove to sink/primary_camera.mp4">
+                </video>
+                <p>Move the glove from right stove to sink. (FLOWER w/ novel objects)</p>
+            </div>
+            <div class="column is-one-quarter">
+                <video width="100%" autoplay muted loop playsinline>
+                    <source src="./static/video/real_novel/novel_openvla/Move the glove from right stove to sink/primary_camera.mp4">
+                </video>
+                <p>Move the glove from right stove to sink. (OpenVLA w/ novel objects)</p>
+            </div>
+            <div class="column is-one-quarter">
+                <video width="100%" autoplay muted loop playsinline>
+                    <source src="./static/video/real_novel/novel_flower/Move the red cup from right stove to sink/primary_camera.mp4">
+                </video>
+                <p>Move the red cup from right stove to sink. (FLOWER w/ novel objects)</p>
+            </div>
+            <div class="column is-one-quarter">
+                <video width="100%" autoplay muted loop playsinline>
+                    <source src="./static/video/real_novel/novel_openvla/Move the red cup from right stove to sink/primary_camera.mp4">
+                </video>
+                <p>Move the red cup from right stove to sink. (OpenVLA w/ novel objects)</p>
+            </div>
+        </div>
     </div>
 </div>
 
